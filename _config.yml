@@ -1,0 +1,6 @@
+sass:
+  style: compact
+
+exclude:
+  - README.md
+  - node_modules

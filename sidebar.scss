@@ -1,0 +1,133 @@
+---
+---
+
+@import "functions";
+@import "variables";
+@import "mixins";
+@import "utilities";
+
+#c4i-close {
+  box-sizing: content-box;
+  position:absolute;
+  top:0;
+  right:0;
+  cursor: pointer;
+
+  width: $btn-close-width;
+  height: $btn-close-height;
+  padding: 16px;
+  color: $btn-close-color;
+  background: transparent escape-svg($btn-close-bg) center / $btn-close-width auto no-repeat; // include transparent for button elements
+  border: 0; // for button elements
+  @include border-radius();
+  opacity: $btn-close-opacity;
+
+  // Override <a>'s hover style
+  &:hover {
+    color: $btn-close-color;
+    text-decoration: none;
+    opacity: $btn-close-hover-opacity;
+  }
+
+  &:focus {
+    outline: 0;
+    box-shadow: $btn-close-focus-shadow;
+    opacity: $btn-close-focus-opacity;
+  }
+
+  &:disabled,
+  &.disabled {
+    pointer-events: none;
+    user-select: none;
+    opacity: $btn-close-disabled-opacity;
+  }
+}
+
+#c4i-sidebar-toggler {
+    color: $navbar-light-color;
+
+    cursor: pointer;
+
+    padding: $navbar-toggler-padding-y $navbar-toggler-padding-x;
+    @include font-size($navbar-toggler-font-size);
+    line-height: 1;
+    background-color: transparent;
+    border: $border-width solid $navbar-light-toggler-border-color;
+    @include border-radius($navbar-toggler-border-radius);
+    @include transition($navbar-toggler-transition);
+
+    &:hover {
+        text-decoration: none;
+    }
+
+    &:focus {
+        text-decoration: none;
+        outline: 0;
+        box-shadow: 0 0 0 $navbar-toggler-focus-width;
+    }
+
+    .c4i-sidebar-icon {
+        display: inline-block;
+        width: 1.5em;
+        height: 1.5em;
+        vertical-align: middle;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;
+        background-image: escape-svg($navbar-light-toggler-icon-bg);
+    }
+}
+
+:root {
+    --base-hsl: 176, 44%, 15%;
+    --bg-color: 186, 42%, 51%;
+    --panel-width: 280px;
+    @media (min-width: 36em) {
+      --panel-width: 350px;
+    }
+}
+
+#c4i-sidebar {
+    padding: 48px 32px;
+    transition: all .4s ease;
+    background-color: hsl(var(--bg-color), 1);
+    box-shadow: 4px 4px 16px hsl(var(--bg-color), 0.2);
+    top: 0;
+    bottom: 0;
+    z-index: 1000;
+    display: block;
+    position: fixed;
+    box-sizing: border-box;
+    width: var(--panel-width);
+    left: calc(-1 * var(--panel-width) - 20px);
+    overflow-y: scroll;
+
+    font-family: Roboto, sans-serif;
+    font-size: 1rem;
+
+    &.show {
+        left:0;
+    }
+
+    ul {
+        padding: 0;
+
+        li {
+            list-style: none;
+            line-height: 1.65;
+
+            p {
+                margin: 0 0 16px 0;
+            }
+
+            a {
+                text-decoration: none;
+                color: hsl(var(--base-hsl), 0.7);
+
+                &:hover {
+                    color: hsl(var(--base-hsl), 1);
+                }
+            }
+        }
+    }
+}
