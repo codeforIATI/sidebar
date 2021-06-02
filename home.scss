@@ -40,3 +40,7 @@
         background-image: escape-svg($navbar-light-toggler-icon-bg);
     }
 }
+
+.code-block {
+    white-space: pre-wrap;
+}
