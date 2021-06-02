@@ -5,9 +5,19 @@
 <head>
     <meta charset="utf-8">
     <title>Sidebar demo</title>
+    <style>
+    .container {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    </style>
 </head>
 <body>
-    <a href="#" data-c4i-toggle="sidebar">Open the sidebar</a>
+    <div class="container">
+        <button data-c4i-toggle="sidebar">Toggle the sidebar</button>
+    </div>
     <script src="{{ site.github.url }}/sidebar.js"></script>
 </body>
 </html>
