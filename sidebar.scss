@@ -60,7 +60,7 @@
     top: 0;
     bottom: 0;
     z-index: 1000;
-    display: block;
+    display: block !important;
     position: fixed;
     box-sizing: border-box;
     width: var(--panel-width);

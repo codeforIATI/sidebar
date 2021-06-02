@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
     var assetsPath='https://codeforiati.org/sidebar/';
     var css='sidebar-css';if(!document.getElementById(css)){var head=document.getElementsByTagName('head')[0];var link=document.createElement('link');link.id=css;link.rel='stylesheet';link.type='text/css';link.href=assetsPath+'sidebar.css';link.media='screen';head.appendChild(link);}
-    const sidebarHtml = '<div id="c4i-sidebar">' +
+    const sidebarHtml = '<div id="c4i-sidebar" style="display:none;">' +
                         '<button type="button" id="c4i-close" aria-label="Close"></button>' +
                         '<nav>' +
                         '<h2>Code for IATI</h2>' +
