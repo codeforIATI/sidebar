@@ -4,3 +4,10 @@ sass:
 exclude:
   - README.md
   - node_modules
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
