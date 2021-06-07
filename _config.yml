@@ -4,6 +4,9 @@ sass:
 exclude:
   - README.md
   - node_modules
+  - package.json
+  - package-lock.json
+  - build.sh
 
 defaults:
   -
