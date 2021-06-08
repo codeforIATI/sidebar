@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
         head.appendChild(link);
     }
     var request = new XMLHttpRequest();
-    request.open('GET', baseUrl + '/body.html', true);
+    request.open('GET', baseUrl + '/contents.html', true);
     request.onload = function() {
       const sidebarHtmlHead = '<div id="c4i-sidebar" ' +
         'style="display:none;">' +
