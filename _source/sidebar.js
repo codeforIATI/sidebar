@@ -14,17 +14,25 @@ document.addEventListener("DOMContentLoaded", function () {
     var request = new XMLHttpRequest();
     request.open('GET', baseUrl + '/contents.html', true);
     request.onload = function() {
-      const sidebarHtmlHead = '<div id="c4i-sidebar" ' +
+      const sidebarHtml = '<div id="c4i-sidebar" ' +
         'style="display:none;">' +
         '<button type="button" id="c4i-close" ' +
         'aria-label="Close"></button>' +
-        '<nav>';
-      const sidebarHtmlBody = this.response;
-      const sidebarHtmlFoot = '</nav>' +
+        '<nav>' +
+        this.response +
+        '</nav>' +
         '</div>';
-      var template = document.createElement('template');
-      template.innerHTML = sidebarHtmlHead + sidebarHtmlBody + sidebarHtmlFoot;
-      document.body.insertBefore(template.content, document.body.firstChild);
+      const sidebarDoc = new DOMParser().parseFromString(sidebarHtml, "text/html");
+      var sidebarEl = sidebarDoc.getElementById('c4i-sidebar');
+      const currentUrl = window.location.href;
+      const anchors = sidebarEl.getElementsByTagName('a')
+      Array.prototype.slice.call(anchors).forEach(function (anchor) {
+        if (currentUrl.indexOf(anchor['href']) === 0) {
+          anchor.parentElement.classList.add('active');
+        }
+      });
+
+      document.body.insertBefore(sidebarEl, document.body.firstChild);
 
       document.querySelectorAll('[data-c4i-toggle]').forEach(function (el) {
           el.addEventListener('click', function(e) {
