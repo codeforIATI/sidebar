@@ -1,14 +1,14 @@
 ---
 ---
-
 @import "functions";
 @import "variables";
 @import "mixins";
 @import "utilities";
 
+$c4i_bg_color: #348CCB;
+$c4i_fg_color: #333333;
+
 :root {
-    --base-hsl: 176, 44%, 15%;
-    --bg-color: 186, 42%, 51%;
     --panel-width: 280px;
     @media (min-width: 36em) {
       --panel-width: 350px;
@@ -16,10 +16,11 @@
 }
 
 #c4i-sidebar {
-    padding: 48px 32px;
+    padding: 48px 0;
     transition: all .4s ease;
-    background-color: hsl(var(--bg-color), 1);
-    box-shadow: 4px 4px 16px hsl(var(--bg-color), 0.2);
+    background-color: $c4i_bg_color;
+    color: $c4i_fg_color;
+    box-shadow: 4px 4px 16px opaque($c4i_bg_color, rgba(0, 0, 0, .6));
     top: 0;
     bottom: 0;
     z-index: 1000;
@@ -47,6 +48,7 @@
 
     h2, h3 {
         display: block;
+        padding: 0 32px;
     }
 
     h2 {
@@ -56,29 +58,28 @@
 
     h3 {
         font-size: 1.2rem;
-        margin: 1rem 0;
+        margin: 1rem 0 0;
     }
 
     a {
         cursor: pointer;
+        color: tint-color($c4i_fg_color, 5);
+        display: block;
+        text-decoration: none;
     }
 
     ul {
         padding: 0;
 
         li {
-            display: inline-block;
+            display: block;
             list-style: none;
             line-height: 1.65;
-            margin: 0 0 16px 0;
+            padding: 8px 32px;
 
-            a {
-                text-decoration: none;
-                color: hsl(var(--base-hsl), 0.7);
-
-                &:hover {
-                    color: hsl(var(--base-hsl), 1);
-                }
+            &.active, &:hover {
+                background-color: shade-color($c4i_bg_color, 10);
+                color: shade-color($c4i_fg_color, 10);
             }
         }
     }
