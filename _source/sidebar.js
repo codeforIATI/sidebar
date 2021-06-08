@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    var assetsPath = 'https://codeforiati.org/sidebar/';
+    var baseUrl = '{{ site.github.url }}';
     var css = 'sidebar-css';
     if (!document.getElementById(css)) {
         var head = document.getElementsByTagName('head')[0];
@@ -7,12 +7,12 @@ document.addEventListener("DOMContentLoaded", function () {
         link.id = css;
         link.rel = 'stylesheet';
         link.type = 'text/css';
-        link.href = assetsPath + 'sidebar.css';
+        link.href = baseUrl + '/sidebar.css';
         link.media = 'screen';
         head.appendChild(link);
     }
     var request = new XMLHttpRequest();
-    request.open('GET', 'https://codeforiati.org/sidebar/body.html', true);
+    request.open('GET', baseUrl + '/body.html', true);
     request.onload = function() {
       const sidebarHtmlHead = '<div id="c4i-sidebar" ' +
         'style="display:none;">' +
