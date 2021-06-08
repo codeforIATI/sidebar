@@ -43,6 +43,11 @@ document.addEventListener("DOMContentLoaded", function () {
       document.getElementById('c4i-close').addEventListener('click', function(e) {
           document.getElementById('c4i-sidebar').classList.remove('show');
       }, false);
+      window.addEventListener('keydown', function (event) {
+        if (event.key === 'Escape') {
+          document.getElementById('c4i-sidebar').classList.remove('show');
+        }
+      })
     }
     request.send();
 });
