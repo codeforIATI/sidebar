@@ -36,7 +36,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
       document.querySelectorAll('[data-c4i-toggle]').forEach(function (el) {
           el.addEventListener('click', function(e) {
+            e.preventDefault();
             document.getElementById('c4i-sidebar').classList.toggle('show');
+            return false;
           }, false);
       });
 
