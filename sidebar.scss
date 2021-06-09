@@ -23,7 +23,7 @@ $c4i_fg_color: #333333;
     box-shadow: 4px 4px 16px opaque($c4i_bg_color, rgba(0, 0, 0, .6));
     top: 0;
     bottom: 0;
-    z-index: 1000;
+    z-index: 9999;
     display: block !important;
     position: fixed;
     box-sizing: border-box;
