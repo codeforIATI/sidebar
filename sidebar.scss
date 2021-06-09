@@ -32,7 +32,7 @@ $c4i_fg_color: #333333;
     overflow-y: scroll;
 
     font-family: Roboto, sans-serif;
-    font-size: 1rem;
+    font-size: 16px;
 
     &.show {
         left:0;
@@ -52,13 +52,13 @@ $c4i_fg_color: #333333;
     }
 
     h2 {
-        font-size: 1.5rem;
-        margin: .83rem 0;
+        font-size: 1.5em;
+        margin: .83em 0;
     }
 
     h3 {
-        font-size: 1.2rem;
-        margin: 1rem 0 0;
+        font-size: 1.2em;
+        margin: 1em 0 0;
     }
 
     a {
