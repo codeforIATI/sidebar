@@ -18,7 +18,7 @@ Then start the development server with:
 jekyll serve
 ```
 
-If you make any changes to the javascript source in `_source/sidebar.js`_, you’ll need to minify it by running:
+If you make any changes to the javascript source in `_source/sidebar.js`, you’ll need to minify it by running:
 
 ```
 ./build.sh
