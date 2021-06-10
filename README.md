@@ -1,15 +1,25 @@
 # Code for IATI sidebar
 
-Include the following javascript to enable the sidebar:
+A universal sidebar for Code for IATI projects.
 
-```html
-<script src="//codeforiati.org/sidebar/sidebar.min.js"></script>
+For instructions on adding this sidebar to your project, refer to [the sidebar website](https://codeforiati.org/sidebar/).
+
+## Development
+
+Install the ruby dependencies with:
+
+```
+bundle install
 ```
 
-Then trigger it using the `data-c4i-toggle="sidebar"` attribute. E.g.:
+Then start the development server with:
 
-```html
-<a data-c4i-toggle="sidebar" href="#">Toggle sidebar</a>
+```
+jekyll serve
 ```
 
-[Here’s a demo of it in action.](https://codeforiati.org/sidebar/demo.html)
+If you make any changes to the javascript source in `_source/sidebar.js`_, you’ll need to minify it by running:
+
+```
+./build.sh
+```
