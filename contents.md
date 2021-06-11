@@ -1,6 +1,6 @@
 ---
 ---
-## [Code for IATI](https://codeforiati.org)
+## [![Code for IATI](https://codeforiati.org/assets/img/logo.png "Code for IATI")](https://codeforiati.org)
 
 ### Filter and export IATI data
 * [**IATI Tables** <br> IATI data, transformed into tables to make it easier to work with relational tools](https://iati-tables.codeforiati.org)
@@ -23,8 +23,8 @@
 * [**Replicated codelists** <br> A frequently updated store of replicated codelists and APIs relevant to IATI data users.](https://codelists.codeforiati.org)
 
 ### Helpers for publishing & using IATI data
-* [**d-preview** <br> Generate a private d-preview site with IATI xml.](http://d-preview.codeforiati.org)
-* [**Switcheroo** <br> Converts data bidirectionally from IATI XML to JSON or CSV and back again](https://notshi.github.io/IATIswitcheroo/)
+* [**d-preview** <br> Generate a private d-preview site with IATI xml](http://d-preview.codeforiati.org)
+* [**IATI Switcheroo** <br> Converts data bidirectionally from IATI XML to JSON or CSV and back again](https://notshi.github.io/IATIswitcheroo/)
 * [**Freechange** <br> Javascript module and data to perform historical currency exchange](https://xriss.github.io/freechange-charts/)
 * [**Org ID finder** <br> Find organisation identifiers for IATI organisations](https://org-id-finder.codeforiati.org)
 * [**Activity ID checker** <br> Check whether an IATI activity identifier exists in the IATI registry](https://activity-id-checker.codeforiati.org)
