@@ -51,8 +51,14 @@ $c4i_fg_color: #212529;
         padding: 0 32px;
     }
 
-    h2 a img {
-        width:100px;
+    h2 a {
+        &:hover {
+            background-color: inherit;
+        }
+
+        img {
+            width:100px;
+        }
     }
     
     h2 {
