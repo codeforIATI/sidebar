@@ -10,6 +10,7 @@ Install the ruby dependencies with:
 
 ```
 bundle install
+npm install
 ```
 
 Then start the development server with:
