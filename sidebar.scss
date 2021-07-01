@@ -73,6 +73,16 @@ $c4i_fg_color: #212529;
 		padding-bottom: 0.5em;
 		color: tint-color($c4i_fg_color, 25);
     }
+
+    h4 {
+        margin-top: 0.5rem;
+        margin-bottom: 1rem;
+        margin-left: 32px;
+        margin-right: 10px;
+        font-size: 1.25rem;
+        font-weight: 300;
+        display: block!important;
+    }
     
     strong {
 		font-size: 1.2em;
