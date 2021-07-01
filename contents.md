@@ -2,6 +2,8 @@
 ---
 ## [![Code for IATI](https://codeforiati.org/assets/img/logo.png "Code for IATI")](https://codeforiati.org)
 
+<p class="lead">Tools and guidance contributed by community members, in support of IATI infrastructure, publishers and data users.</p>
+
 ### Filter and export IATI data
 * [**IATI Tables** <br> IATI data, transformed into tables to make it easier to work with relational tools](https://iati-tables.codeforiati.org)
 * [**Datastore Classic** <br> Query IATI data and get responses in a variety of formats](https://datastore.codeforiati.org)
