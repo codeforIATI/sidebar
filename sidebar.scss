@@ -108,16 +108,14 @@ $c4i_fg_color: #212529;
         }
     }
 
-    p {
-        &.lead {
-            margin-top: 0.5rem;
-            margin-bottom: 1rem;
-            margin-left: 32px;
-            margin-right: 10px;
-            font-size: 1.25rem;
-            font-weight: 300;
-            display: block!important;
-        }
+    h4 {
+        margin-top: 0.5rem;
+        margin-bottom: 1rem;
+        margin-left: 32px;
+        margin-right: 10px;
+        font-size: 1.25rem;
+        font-weight: 300;
+        display: block!important;
     }
 
     #c4i-close {
