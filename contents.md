@@ -12,6 +12,7 @@
 * [**IATI Datasette** <br> Explore and export IATI data in the browser, using Structured Query Language (SQL)](https://datasette.codeforiati.org)
 * [**IATI Notebook** <br> A Google Colab notebook for performing custom analysis on IATI data](https://colab.research.google.com/drive/15Ahauin2YgloaFEwiGjqbnv7L91xNUua)
 * [**Analytics** <br> Statistics, charts and metrics on IATI data accessed via the registry](https://analytics.codeforiati.org)
+* [**dQuery** <br> Use SQL to search the complete IATI data, including non-standard extensions](https://github.com/notshi/dquery)
 
 ### Get raw IATI data
 * [**IATI Data Dump** <br> A daily snapshot of all IATI data (and metadata) on the IATI Registry](https://iati-data-dump.codeforiati.org)
