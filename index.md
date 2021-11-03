@@ -23,3 +23,5 @@ Then trigger it using the `data-c4i-toggle="sidebar"` attribute. E.g.:
 ```html
 <script src="//codeforiati.org/sidebar/sidebar-right.min.js"></script>
 ```
+
+[Here’s a demo of the right-hand side version in action.](demo-right.html)
