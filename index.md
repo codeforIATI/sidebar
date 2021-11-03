@@ -18,10 +18,10 @@ Then trigger it using the `data-c4i-toggle="sidebar"` attribute. E.g.:
 
 ---
 
-**Psst…** Prefer a sidebar appearing from the right? Try this instead:
+**Psst…** Prefer a sidebar appearing from the right-hand side? Try this instead:
 
 ```html
-<script src="//codeforiati.org/sidebar/sidebar-right.min.js"></script>
+<script src="//codeforiati.org/sidebar/sidebar-rhs.min.js"></script>
 ```
 
-[Here’s a demo of the right-hand side version in action.](demo-right.html)
+[Here’s a demo of the right-hand side version in action.](demo-rhs.html)

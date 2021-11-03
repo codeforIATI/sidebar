@@ -33,7 +33,7 @@ $c4i_fg_color: #212529;
     font-family: Roboto, sans-serif;
     font-size: 14px;
 
-    &.left {
+    &.lhs {
         left: calc(-1 * var(--panel-width) - 20px);
 
         &.show {
@@ -41,7 +41,7 @@ $c4i_fg_color: #212529;
         }
     }
 
-    &.right {
+    &.rhs {
         right: calc(-1 * var(--panel-width) - 20px);
 
         &.show {
