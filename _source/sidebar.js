@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
     request.open('GET', baseUrl + '/contents.html', true);
     request.onload = function() {
       const sidebarHtml = '<div id="c4i-sidebar" ' +
-        'style="display:none;">' +
+        'style="display:none;" class="{{ page.position }}">' +
         '<button type="button" id="c4i-close" ' +
         'aria-label="Close"></button>' +
         '<nav>' +
